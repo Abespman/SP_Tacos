@@ -1,5 +1,7 @@
 const mongoose = require("mongoose");
-const Model = mongoose.model("Model");
+const Model = mongoose.model("User");
+const Model = mongoose.model("Product");
+
 
 module.exports = {
 
