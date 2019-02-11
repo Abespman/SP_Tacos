@@ -31,6 +31,10 @@ module.exports = {
             product.description = req.body.description,
             product.image = req.body.image,
             product.save(function(err){
+                if(err){
+                    console.log(err);
+                    res.jason(err);
+                }
             });
         });
     },
