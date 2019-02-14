@@ -13,5 +13,3 @@ module.exports = function(app){
         res.sendFile(path.resolve('./public/dist/public/index.html'));
     })
 }
-    app.get("/", controllers.index);
-}   
