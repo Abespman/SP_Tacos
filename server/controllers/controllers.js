@@ -1,12 +1,12 @@
 const mongoose = require("mongoose");
 const User = mongoose.model("User");
 const Product = mongoose.model("Product");
-const bcrypt = require("bcryptsjs");
+const bcrypt = require("bcryptjs");
 
 
 module.exports = {
 
-    index: function(req, res){
+    index: function(req, res){s
         Product.find({},function(err, model) {
             if(err) {
                 console.log("Returned an error.");
