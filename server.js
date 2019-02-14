@@ -6,7 +6,7 @@ const bodyParser = require("body-parser");
 app.use(bodyParser.json());
 app.use(express.static(__dirname + "/publc/dist/public"));
 
-mongoose.connect("mongodb://localhost/ SP_Tacos");
+mongoose.connect("mongodb://localhost/SP_Tacos");
 
 require("./server/config/mongoose.js");
 require("./server/models/model.js");
