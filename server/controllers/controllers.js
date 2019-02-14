@@ -6,7 +6,7 @@ const bcrypt = require("bcryptjs");
 
 module.exports = {
 
-    index: function(req, res){s
+    index: function(req, res){
         Product.find({},function(err, model) {
             if(err) {
                 console.log("Returned an error.");
