@@ -17,7 +17,7 @@ module.exports = {
             }
         })
     },
-    showOne: function(req, res){
+    details: function(req, res){
         Product.findOne({_id: req.params.id}, function(err, model){
         });
     },
