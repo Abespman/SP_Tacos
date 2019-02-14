@@ -1,4 +1,5 @@
 const controllers = require("./../controllers/controllers.js");
+const path = require ("path");
 
 module.exports = function(app){
     app.get("/shop", controllers.index);
